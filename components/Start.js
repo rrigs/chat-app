@@ -6,7 +6,6 @@ import {
   View,
   Text,
   TextInput,
-  Button,
 } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
@@ -66,16 +65,17 @@ export default class Start extends React.Component {
                 }}
               ></TouchableOpacity>
             </View>
-            <Button
-              color="#757083"
-              title="Start Chatting"
+            <TouchableOpacity
+              style={styles.button}
               onPress={() =>
                 this.props.navigation.navigate("Chat", {
                   name: this.state.name,
                   color: this.state.color,
                 })
               }
-            />
+            >
+              <Text style={styles.buttonText}>Start Chatting</Text>
+                    </TouchableOpacity>
           </View>
         </View>
       </ImageBackground>
@@ -90,9 +90,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
   },
   titleContainer: {
     flex: 0.75,
@@ -163,26 +161,26 @@ const styles = StyleSheet.create({
   },
   color1: {
     backgroundColor: "#090C08",
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
     marginTop: 10,
     marginBottom: 10,
   },
   color2: {
     backgroundColor: "#474056",
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
     marginTop: 10,
     marginBottom: 10,
     marginLeft: 10,
   },
   color3: {
     backgroundColor: "#8A95A5",
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
     marginTop: 10,
     marginBottom: 10,
     marginLeft: 10,
@@ -190,10 +188,27 @@ const styles = StyleSheet.create({
   },
   color4: {
     backgroundColor: "#B9C6AE",
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
     marginTop: 10,
     marginBottom: 10,
+  },
+  button: {
+    backgroundColor: "#757083",
+    flexDirection: "column",
+    position: "relative",
+    marginRight: "auto",
+    marginLeft: "auto",
+    width: "88%",
+    height: 50,
+    borderRadius: 3,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  buttonText: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#FFFFFF",
   },
 });
