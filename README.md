@@ -14,7 +14,7 @@ This is a messaging application for mobile devices that was developed using Reac
 ## Screenshots
 
 ![Start Screenshot](/assets/StartSS.png)
-![Chat Screenshot](/assets/ChatSS.png)
+![Chat Screenshot](/assets/ChatSS.png) <br />
 ![Type Screenshot](/assets/TypeSS.png)
 ![Action Screenshot](/assets/ActionSS.png)
 
