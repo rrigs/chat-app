@@ -1,15 +1,23 @@
 # Chat App
 
-## Description
+## Overview
 
-This is a messaging application for mobile devices that was developed using React Native, Expo's Gifted Chat, and Google Firebase. It provides users with a chat interface to send messages with options to share images and their location via an action button.
+This is the sixth major project from my online web development course. It is a messaging application for mobile devices that was developed using React Native, Expo's Gifted Chat, and Google Firebase. It provides users with a chat interface to send messages with options to share images and their location via an action button.
 
-## Features
+## Technologies:
 
-- Start screen to input a username as well as choose a background color for the chat screen.
-- Chat screen that displays the conversation with an input field for sending messages, as well as an action button for more options.
-- Action button with options to Choose Photo From Library, Take Picture, Send Location, or Cancel; the app will ask permission to access the device's photo library/camera/location data.
-- Data is stored for both online and offline use.
+- React Native
+- Expo
+- Expo's Gifted Chat
+- Google Firebase
+- Android Studio
+
+## Key Features:
+
+- **Start screen** to input a username as well as choose a background color for the chat screen.
+- **Chat screen** that displays the conversation with an input field for sending messages, as well as an action button for more options.
+- **Action button** with options to Choose Photo From Library, Take Picture, Send Location, or Cancel; the app will ask permission to access the device's photo library/camera/location data.
+- Data is stored for both **online** and **offline** use.
 
 ## Screenshots
 
@@ -18,7 +26,7 @@ This is a messaging application for mobile devices that was developed using Reac
 ![Type Screenshot](/assets/TypeSS.png)
 ![Action Screenshot](/assets/ActionSS.png)
 
-## Setup
+## Deployment
 
 ### You will need:
 
